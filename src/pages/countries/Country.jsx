@@ -1,10 +1,16 @@
-import * as React from 'react';
+import  React, {useEffect, useState} from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
-  { field: 'Country', headerName: 'Country', width: 130 },
-  { field: 'reportedcases', headerName: 'Reported Cases', type: 'number', width: 130 },
+  { field: 'Continent', headerName: 'Continent', width: 130 },
+  { field: 'Country', headerName: 'Country', type: 'text', width: 130 },
+  {
+    field: 'population',
+    headerName: 'Population',
+    type: 'number',
+    width: 120,
+  },
   {
     field: 'activecases',
     headerName: 'Active Cases',
@@ -12,38 +18,69 @@ const columns = [
     width: 120,
   },
   {
-    field: 'recoveries',
-    headerName: 'Recoveries',
+    field: 'recovered',
+    headerName: 'Recovered',
     type: 'number',
     width: 120,
   },
   {
-    field: 'globalindex',
-    headerName: '+vity Index',
+    field: 'deaths',
+    headerName: 'Deaths',
+    type: 'number',
+    width: 120,
+  },
+  {
+    field: 'tests',
+    headerName: 'Tests',
     type: 'number',
     width: 120,
   },
 ];
 
-const rows = [
-  { id: 1, reportedcases: 67006, Country: 'Kenya', activecases: 3500, recoveries:"33" },
-  { id: 2, reportedcases: 68565, Country: 'Turkey', activecases: 4298, recoveries:"33" },
-  { id: 3, reportedcases: 55886, Country: 'Ukraine', activecases: 45999, recoveries:"33" },
-  { id: 4, reportedcases: 866668, Country: 'Burundi', activecases: 1689, recoveries:"33" },
-  { id: 5, reportedcases: 68686, Country: 'Greece', activecases: 9000, recoveries:"33" },
-  { id: 6, reportedcases: 68686, Country: 'Denmark', activecases: 15065, recoveries:"33" },
-  { id: 7, reportedcases: 68686, Country: 'Ethiopia', activecases: 44575, recoveries:"33" },
-  { id: 8, reportedcases: 65788, Country: 'Uganda', activecases: 375796, recoveries:"33" },
-  { id: 9, reportedcases: 1406, Country: 'Ireland', activecases: 659757, recoveries:"33" },
-];
+
+
+
+
+
+const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '1ea578d54bmshb7546e52320d64ep1a3043jsn717ee90870fe',
+    'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
+  }
+};
 
 export default function DataTable() {
+  const [stat, setStat] = useState([]);
+
+
+  // const {id,Country, Continent, Population, activecases} = rows
+
+  console.log();
+
+// let statt=stat
+const rows = [
+      stat.map((sta,i)=>(
+
+        { id: i, Country: sta.country, Continent: 'Kenya', Population: 3500, activecases:"33" }
+        ))
+      ];
+
+
+  useEffect(()=>{
+    fetch('https://covid-193.p.rapidapi.com/statistics', options)
+    .then(response => response.json())
+    .then(response => setStat(response.response))
+    .catch(err => console.error(err));
+  },[])
+
   return (
     <div style={{ height: 700, width: '100%' }}>
       GLOBAL COVID-19 STATS
       <DataGrid
-        rows={rows}
+        rows={rows} 
         columns={columns}
+        getRowId={(row) => row.statId}
         pageSize={8}
         rowsPerPageOptions={[8]}
         checkboxSelection
