@@ -8,6 +8,7 @@ import Country from "./pages/countries/Country";
 import Signup from "./pages/signup/Signup";
 import Login from "./pages/login/Login";
 import Single from "./pages/single/Single";
+import Error from "./pages/notfound/Error";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login/>
   },
+  {
+    path: "*",
+    element: <Error/>
+  }
 ]);
 
 function App() {
