@@ -5,18 +5,18 @@ import Navbar from '../../components/navbar/Navbar'
 import Country from '../../pages/countries/Country'
 
 
-const home = () => {
+const Home = () => {
   return (
     <div className='home'> 
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-        <div className="widgets">
-          <Country />
+        <div className="countries">
+         <Country/>
         </div>
         </div>
     </div>
   )
 }
 
-export default home
+export default Home

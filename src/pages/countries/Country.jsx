@@ -56,15 +56,14 @@ export default function DataTable() {
 
   // const {id,Country, Continent, Population, activecases} = rows
 
-  console.log();
 
 // let statt=stat
-const rows = [
+const rows = 
       stat.map((sta,i)=>(
 
-        { id: i, Country: sta.country, Continent: 'Kenya', Population: 3500, activecases:"33" }
+        { id: i, Country: sta.country, Continent: sta.continent, population: sta.population, activecases: sta.cases.active, recovered: sta.cases.recovered, deaths: sta.deaths.total, tests: sta.tests.total }
         ))
-      ];
+      ;
 
 
   useEffect(()=>{
@@ -79,9 +78,9 @@ const rows = [
       GLOBAL COVID-19 STATS
       <DataGrid
         rows={rows} 
+        // getRowId={(row) => row.id}
         columns={columns}
-        getRowId={(row) => row.statId}
-        pageSize={8}
+        pageSize={10}
         rowsPerPageOptions={[8]}
         checkboxSelection
       />
