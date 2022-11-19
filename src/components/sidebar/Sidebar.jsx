@@ -12,8 +12,10 @@ import HelpIcon from '@mui/icons-material/Help';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import "./sidebar.scss"
+import {useNavigate} from 'react-router-dom';
 
 const sidebar = () => {
+  const navigate = useNavigate();
   return (
     <div className='sidebar'>
       <div className='top'>
@@ -41,7 +43,7 @@ const sidebar = () => {
             <span>Comments</span>
           </li>
           <p className="title">Charts</p>
-          <li>
+          <li onClick={()=>navigate("/countries") }>
             <CoronavirusIcon className='icon' />
             <span>Global Infections</span>
           </li>
