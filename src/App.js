@@ -4,11 +4,11 @@ import {
   // Route,
 } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Country from "./pages/countries/Country";
 import Signup from "./pages/signup/Signup";
 import Login from "./pages/login/Login";
 import Single from "./pages/single/Single";
 import Error from "./pages/notfound/Error";
+import  Global from "./pages/global/Global";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/countries",
-    element: <Country/>
+    element: <Global />
   },
   {
     path: "/single",
