@@ -2,8 +2,10 @@ import React from 'react'
 import "./home.scss" 
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
-// import Country from '../../pages/countries/Country'
+import Country from '../../pages/countries/Country'
 import Widget from '../../components/widgets/Widget'
+// import Chart from '../../components/Charts/Charts'
+
 
 
 const Home = () => {
@@ -18,8 +20,11 @@ const Home = () => {
           <Widget type="deaths"/>
           <Widget type="tests"/>
         </div>
-        {/* <div className="countries">
+        <div className="countries">
          <Country/>
+        </div>
+        {/* <div>
+          <Chart/>
         </div> */}
         </div>
     </div>
