@@ -75,7 +75,7 @@ const rows =
 
   return (
     <div style={{ height: 700, width: '100%' }}>
-      GLOBAL COVID-19 STATS
+      {/* GLOBAL COVID-19 STATS */}
       <DataGrid
         rows={rows} 
         // getRowId={(row) => row.id}

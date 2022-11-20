@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, Link} from 'react'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
@@ -14,18 +14,18 @@ import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import "./sidebar.scss"
 import {useNavigate} from 'react-router-dom';
 
-const sidebar = () => {
+const Sidebar = () => {
   const navigate = useNavigate();
   return (
     <div className='sidebar'>
       <div className='top'>
-        <div className="spanlogo">Cy-Health</div>
+        <div className="spanlogo">CyHealth</div>
       </div>
       <hr />
       <div className='bottom'>
         <ul>
           <p className="title">Main</p>
-          <li>
+          <li onClick={()=>navigate("/") }> 
             <DashboardIcon className='icon' />
             <span>Dashboard</span>
           </li>
@@ -83,4 +83,4 @@ const sidebar = () => {
   )
 }
 
-export default sidebar
+export default Sidebar
