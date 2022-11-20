@@ -9,6 +9,7 @@ import Login from "./pages/login/Login";
 import Single from "./pages/single/Single";
 import Error from "./pages/notfound/Error";
 import  Global from "./pages/global/Global";
+import Daily from "./pages/24hrs/Daily";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/single",
-    element: <Single/>
+    element: <Daily/>
   },
   {
     path: "/signup",

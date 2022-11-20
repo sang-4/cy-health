@@ -3,7 +3,8 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import VaccinesIcon from '@mui/icons-material/Vaccines';
 import CoronavirusIcon from '@mui/icons-material/Coronavirus';
-import GpsFixedIcon from '@mui/icons-material/GpsFixed';
+import AvTimerIcon from '@mui/icons-material/AvTimer';
+// import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import ArticleIcon from '@mui/icons-material/Article';
 import CommentIcon from '@mui/icons-material/Comment';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -48,8 +49,8 @@ const Sidebar = () => {
             <span>Global Infections</span>
           </li>
           <li onClick={()=>navigate("/single")}>
-            <GpsFixedIcon className='icon' />
-            <span>Country Specific</span>
+            <AvTimerIcon className='icon' />
+            <span>24hrs Overview</span>
           </li>
           <li>
             <VaccinesIcon className='icon' />
