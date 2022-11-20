@@ -47,7 +47,7 @@ const Sidebar = () => {
             <CoronavirusIcon className='icon' />
             <span>Global Infections</span>
           </li>
-          <li>
+          <li onClick={()=>navigate("/single")}>
             <GpsFixedIcon className='icon' />
             <span>Country Specific</span>
           </li>

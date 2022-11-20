@@ -2,9 +2,9 @@ import React from 'react'
 import "./home.scss" 
 import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from '../../components/navbar/Navbar'
-import Country from '../../pages/countries/Country'
+// import Country from '../../pages/countries/Country'
 import Widget from '../../pages/widgets/Widget'
-// import Chart from '../../components/Charts/Charts'
+import Single from '../../pages/single/Single'
 
 
 
@@ -20,9 +20,6 @@ const Home = () => {
           <Widget type="deaths"/>
           <Widget type="tests"/>
         </div>
-        {/* <div>
-          <Chart/>
-        </div> */}
         </div>
     </div>
   )
