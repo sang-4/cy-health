@@ -60,8 +60,6 @@ At the moment, configured and completed working links are;
 * HTML
 * Postman
 * RapidAPI
-* YouTube
-* StackOverflow
 
 ---
 
@@ -74,6 +72,14 @@ Ther are no knowm bugs at the moment. Kindly contact me reach me through kiprops
 ##License
 
 MIT LIcense
+
+---
+
+##Acknowledgements
+
+* YouTube
+* StackOverflow
+* Google
 
 ---
 
