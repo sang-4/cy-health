@@ -17,6 +17,13 @@ This project is being developed and maintained by:
 
 ##Installation
 
+```
+Fork/Clone this repository to your local machine.(https://github.com/sang-4/cy-health)
+& cd into the project folder
+& Run npm install to install all dependencies
+& Run npm start to start the app
+```
+
 ---
 ##Description
 
