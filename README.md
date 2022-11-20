@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+#ReCipe
+---
+Live links
+Click [here](https://recipe-app-sang-4.vercel.app/) to view live site. 
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+---
+CyHEalth
 
-In the project directory, you can run:
+This project is being developed and maintained by:
+* Allan Kiprop
+<div id="badges" align="center">
+  <a href="https://www.linkedin.com/in/allan-kiprop-6ab385157/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  <a href="https://www.youtube.com/channel/UClgGvTWSGasKG9R3HsF5CXA">
+    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
+  </a>
+  <a href="https://twitter.com/asan_gk">
+    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=sang-4&style=flat-square&color=blue" alt=""/>
+  <h1>
+  Hey there! I'm Kiprop Allan
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+</h1>
+</div>
+---
 
-### `npm start`
+##Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ReCipe is an app that allows users to view, add, delete, update and comment on recipes, be it their own or those created by other users. Users can also view other users' recipes and comment on them. Users also have the ability to share their favortie recipes with other users via social media platforms.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![alt text](./readmephotos/p1.JPG)
+![alt text](./readmephotos/p2.JPG)
+![alt text](./readmephotos/p3.JPG)
+![alt text](./readmephotos/p4.JPG)
+![alt text](./readmephotos/p7.JPG)
+![alt text](./readmephotos/p5.JPG)
+![alt text](./readmephotos/p6.JPG)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##Setup/Installation Requirements
+```
+Fork/Clone this repository to your local machine.(https://github.com/sang-4/recipe-app)
+& cd into the project folder
+& Run npm install to install all dependencies
+& Run npm start to start the app
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##Known Bugs
+There are no known bugs at the moment. If you encounter any, please contact us.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##Technologies Used
+* HTML
+* CSS
+* JavaScript
+* React
+* Redux
+* Ruby on Rails(API)
+* PostgreSQL
+* Heroku
+* Postman
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##Support and contact details
+If you have any issues, questions, ideas or concerns, please contact us at:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+recipe.app@gmail.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##License
+MIT License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
