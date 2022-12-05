@@ -1,5 +1,5 @@
 import React from 'react'
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 import { Line } from 'react-chartjs-2'
 import {
     Chart as ChartJS, 
@@ -16,27 +16,27 @@ ChartJS.register(
     PointElement,
 )
 
-const options = {
-  method: 'GET',
-  headers: {
-    'X-RapidAPI-Key': '1ea578d54bmshb7546e52320d64ep1a3043jsn717ee90870fe',
-    'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
-  }
-};
+// const options = {
+//   method: 'GET',
+//   headers: {
+//     'X-RapidAPI-Key': '1ea578d54bmshb7546e52320d64ep1a3043jsn717ee90870fe',
+//     'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
+//   }
+// };
 
-const [datas, setData] = useState([]);
+// const [datas, setData] = useState([]);
 
-const rows = 
-      datas.map((data,i)=>(
+// const rows = 
+//       datas.map((data,i)=>(
 
-        { id: i, Country: st.country, Continent: sta.continent, population: sta.population, activecases: sta.cases.active, recovered: sta.cases.recovered, deaths: sta.deaths.total, tests: sta.tests.total }
-        ))
-      ;
+//         { id: i, Country: st.country, Continent: sta.continent, population: sta.population, activecases: sta.cases.active, recovered: sta.cases.recovered, deaths: sta.deaths.total, tests: sta.tests.total }
+//         ))
+//       ;
 
-fetch('https://covid-193.p.rapidapi.com/history?country=usa&day=2020-06-02', options)
-  .then(response => response.json())
-  .then(data => console.log(response))
-  .catch(err => console.error(err));
+// fetch('https://covid-193.p.rapidapi.com/history?country=usa&day=2020-06-02', options)
+//   .then(response => response.json())
+//   .then(data => console.log(response))
+//   .catch(err => console.error(err));
 
 const Single = () => {
     const data ={
