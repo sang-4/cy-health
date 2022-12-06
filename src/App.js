@@ -6,7 +6,7 @@ import {
 import Home from "./pages/home/Home";
 import Signup from "./pages/signup/Signup";
 import Login from "./pages/login/Login";
-import Single from "./pages/single/Single";
+// import Single from "./pages/single/Single";
 import Error from "./pages/notfound/Error";
 import  Global from "./pages/global/Global";
 import Daily from "./pages/24hrs/Daily";
